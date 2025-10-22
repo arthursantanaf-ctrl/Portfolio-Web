@@ -23,6 +23,14 @@
             text-align: center;
             font-size: 25px;
         }
+
+        footer{
+            text-align: center;
+            margin-top: 60px;
+            font-size: 14px;
+            color: #555;       
+        
+        }
         h2{
             text-align: center;
             margin-top: 60px;
@@ -70,23 +78,45 @@
         #tit{
             font-size: 40px;
         }
-    
+        #theme-toggle{
+            width: 50px;
 
+        }
+       body.dark-mode{
+        background-color: #121212;
+        color: #e0e0e0;
+       }
+       body.dark-mode li{
+        background-color: #1e1e1e;
+        border-color: #444;
+       }
+       body.dark-mode a{
+        color: #ffffff;
+       }
+        body.dark-mode h1,
+        body.dark-mode h2,
+        body.dark-mode h3,
+        body.dark-mode p {
+            color: #e0e0e0; /* O mesmo branco suave do body */
+
+
+}
 
         
     </style>
 </head>
 <body>
     <h1>Arthur Santana</h1>
+    <button id="theme-toggle"> mudar para noturno </button> <p> estudante de tecnologia </p>
  <p id="tit">Estudante de tecnologia em busca de uma oportunidade de estágio para aplicar e expandir meus conhecimentos em desenvolvimento de software.</p>
     <h2> meus projetos</h2>
 
- <ul>
+ <ul id = "escritas">
     <li>
         <img src="portifolio.avif" alt="imagem portifolio">
 
         <div class="cardcontent">
-        <h3><a href="http://127.0.0.1:5501/porifolio.html">Projeto 1: Página de Portfólio</a></h3>
+        <h3><a href="http://127.0.0.1:5500/porifolio.html">Projeto 1: Página de Portfólio</a></h3>
         <p>A página que estamos desenvolvendo para apresentar minhas habilidades e projetos em HTML e CSS. </p>
     </div>
 
@@ -111,8 +141,23 @@
     </div>
     </li>
 </ul>
+    <h1> Arthur Santana</h1>
+    <button id ="theme-toggle"> </button>
+    <button id = "color-cycle-button"> Mudar Cor</button>
+<footer>
+    <p>
+        Desenvolvido por Arthur Santana |
+        <a href="https://www.linkedin.com/in/arthur-santana-dev/"target="_blank">LinkedIn</a> |
+        <a href="https://github.com/arthursantanaf-ctrl" target= "blank">github</a>
+    </p>
+
+</footer>
+<script src ="script.js"> </script>
     
     
 </body>
 </html>
+
+
+
 
