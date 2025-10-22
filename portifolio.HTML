@@ -3,58 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Arthur Santana</title>
-    
+    <title>Portfólio | Arthur Santana</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Arthur Santana</h1>
-    
-    <button id="theme-toggle">Mudar para Modo Noturno</button> 
-    <p>estudante de tecnologia</p>
-    
-    <p id="tit">Estudante de tecnologia em busca de uma oportunidade de estágio para aplicar e expandir meus conhecimentos em desenvolvimento de software.</p>
-    
-    <h2>meus projetos</h2>
 
-    <ul id="escritas">
-        <li>
-            <img src="portifolio.avif" alt="imagem portifolio">
-            <div class="cardcontent">
-                <h3><a href="#">Projeto 1: Página de Portfólio</a></h3>
-                <p>A página que estamos desenvolvendo para apresentar minhas habilidades e projetos em HTML e CSS.</p>
-            </div>
-        </li>
+    <header class="header-container">
+        <div class="header-content">
+            <h1>Arthur Santana</h1>
+            <p class="subtitle">Estudante de Análise e Desenvolvimento de Sistemas</p>
+        </div>
+        <div class="header-controls">
+            <button id="theme-toggle">Modo Noturno</button>
+            <button id="color-cycle-button">Mudar Cor Destaque</button>
+        </div>
+    </header>
 
-        <li>
-            <img id="calculadora" src="calculadora.avif" alt="imagem calculadora">
-            <div class="cardcontent">
-                <h3><a href="">Projeto 2: Calculadora com Interface Gráfica</a></h3>
-                <p>Uma calculadora desenvolvida para praticar lógica e manipulação de eventos.</p>
-            </div>
-        </li>
+    <main class="main-container">
+        <section class="about-me">
+            <p>Estudante de tecnologia em busca de uma oportunidade de estágio para aplicar e expandir meus conhecimentos em desenvolvimento de software, dados e IA.</p>
+        </section>
 
-        <li>
-            <img src="analise de dados.avif" alt="imagem analise de dados">
-            <div class="cardcontent">
-                <h3><a href="#">projeto analise de dados </a></h3>
-                <p> Um projeto de estudo utilizando Python para analisar um conjunto de dados.</p> 
-            </div>
-        </li>
-    </ul>
+        <h2>Meus Projetos</h2>
 
-    <button id="color-cycle-button">Mudar Cor</button>
+        <ul class="project-list">
+            
+            <li class="project-card">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Imagem de um notebook com código">
+                <div class="card-content">
+                    <h3>Projeto 1: Página de Portfólio</h3>
+                    <p>Esta própria página, desenvolvida para apresentar minhas habilidades em HTML, CSS e JavaScript, incluindo responsividade e manipulação do DOM.</p>
+                </div>
+            </li>
+
+            <li class="project-card">
+                <img src="https://images.unsplash.com/photo-1596496050807-c200b0a3d490?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Imagem de uma calculadora">
+                <div class="card-content">
+                    <h3><a href="calculadora.html">Projeto 2: Calculadora com Interface Gráfica</a></h3>
+                    <p>Uma calculadora funcional desenvolvida em JavaScript para praticar lógica de programação e manipulação de eventos do DOM.</p>
+                </div>
+            </li>
+
+            <li class="project-card">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Imagem de gráficos de análise de dados">
+                <div class="card-content">
+                    <h3><a href="#">Projeto 3: Análise de Dados com Python</a></h3>
+                    <p>Um projeto de estudo utilizando Python, Pandas e APIs de IA para orquestrar um pipeline de análise de dados de e-commerce.</p>
+                </div>
+            </li>
+        </ul>
+    </main>
 
     <footer>
         <p>
             Desenvolvido por Arthur Santana |
             <a href="https://www.linkedin.com/in/arthur-santana-dev/" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/arthursantanaf-ctrl" target="_blank">github</a>
+            <a href="https://github.com/arthursantanaf-ctrl" target="_blank">GitHub</a>
         </p>
     </footer>
 
     <script src="script.js"></script>
-    
 </body>
 </html>
 
