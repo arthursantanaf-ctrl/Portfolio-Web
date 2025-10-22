@@ -1,89 +1,168 @@
-body{
-    background-color: rgb(210, 223, 241);
-    color: #333333;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    max-width: 800px;
-    margin: 40px auto;
-}
-h1{
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 60px;
-}
-p{
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 25px;
-}
-footer{
-    text-align: center;
-    margin-top: 60px;
-    font-size: 14px;
-    color: #555;      
-}
-h2{
-    text-align: center;
-    margin-top: 60px;
-    font-size: 60px;
-}
-ul{
-    list-style-type: none;
-    padding: 0;
-    color: #333333;
-}
-li p{
-    text-align: left;
-}
-li{
-    border: 1px solid #000000;
-    border-radius: 8px; 
-    margin-bottom: 20px;
-    background-color: #fff;
-    overflow: hidden;      
-}
-h3{
-    margin-top: 0;
-    font-size: 40px;
-}
-a{
-    color: #833636;
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: underline;
-}
-li img{
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;  
-}
-.cardcontent{ 
-    padding: 24px;
-}
-#tit{
-    font-size: 40px;
-}
-#theme-toggle{
-    width: 50px; /* Você pode querer ajustar isso ou o texto do botão */
+
+:root {
+    --cor-primaria: #007BFF; 
+    --fundo-claro: #f4f7f6;
+    --texto-claro: #333;
+    --cartao-claro: #ffffff;
+    --borda-clara: #ddd;
+
+    --fundo-escuro: #121212;
+    --texto-escuro: #e0e0e0;
+    --cartao-escuro: #1e1e1e;
+    --borda-escura: #444;
+
+    --fonte-familia: 'Roboto', 'Gill Sans', 'Trebuchet MS', sans-serif;
+    --velocidade-transicao: 0.3s;
 }
 
-/* --- Estilos do Modo Noturno --- */
-body.dark-mode{
-    background-color: #121212;
-    color: #e0e0e0;
+body {
+    background-color: var(--fundo-claro);
+    color: var(--texto-claro);
+    font-family: var(--fonte-familia);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    transition: background-color var(--velocidade-transicao), color var(--velocidade-transicao);
 }
-body.dark-mode li{
-    background-color: #1e1e1e;
-    border-color: #444;
+
+
+body.modo-noturno {
+    background-color: var(--fundo-escuro);
+    color: var(--texto-escuro);
 }
-body.dark-mode a{
-    color: #ffffff;
+
+/* --- Cabeçalho --- */
+.cabecalho-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--borda-clara);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode p {
-    color: #e0e0e0; /* O mesmo branco suave do body */
+body.modo-noturno .cabecalho-container {
+    border-bottom-color: var(--borda-escura);
+}
+
+.cabecalho-conteudo h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+    transition: color var(--velocidade-transicao);
+}
+.subtitulo {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #555;
+}
+body.modo-noturno .subtitulo {
+    color: #aaa;
+}
+
+.cabecalho-controles {
+    display: flex;
+    gap: 10px;
+}
+button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color var(--velocidade-transicao), color var(--velocidade-transicao);
+}
+#botao-tema {
+    background-color: #333;
+    color: white;
+}
+body.modo-noturno #botao-tema {
+    background-color: #f4f7f6;
+    color: #333;
+}
+#botao-ciclo-cor {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+
+.sobre-mim {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--borda-clara);
+    padding-bottom: 10px;
+}
+body.modo-noturno h2 {
+    border-bottom-color: var(--borda-escura);
+}
+
+
+.lista-projetos {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.cartao-projeto {
+    border: 1px solid var(--borda-clara);
+    border-radius: 8px;
+    background-color: var(--cartao-claro);
+    overflow: hidden;
+    transition: background-color var(--velocidade-transicao), border-color var(--velocidade-transicao);
+}
+body.modo-noturno .cartao-projeto {
+    background-color: var(--cartao-escuro);
+    border-color: var(--borda-escura);
+}
+
+.cartao-projeto img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+.cartao-conteudo {
+    padding: 20px;
+}
+.cartao-conteudo h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+.cartao-conteudo p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color var(--velocidade-transicao);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Rodapé --- */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid var(--borda-clara);
+    font-size: 0.9rem;
+    color: #555;
+}
+body.modo-noturno footer {
+    border-top-color: var(--borda-escura);
+    color: #aaa;
 }
         
   
