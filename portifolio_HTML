@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1</title>
+
+</head>
+<body>
+    <h1>Arthur Santana</h1>
+    <button id="theme-toggle"> mudar para noturno </button> <p> estudante de tecnologia </p>
+ <p id="tit">Estudante de tecnologia em busca de uma oportunidade de estágio para aplicar e expandir meus conhecimentos em desenvolvimento de software.</p>
+    <h2> meus projetos</h2>
+
+ <ul id = "escritas">
+    <li>
+        <img src="portifolio.avif" alt="imagem portifolio">
+
+        <div class="cardcontent">
+        <h3><a href="http://127.0.0.1:5500/porifolio.html">Projeto 1: Página de Portfólio</a></h3>
+        <p>A página que estamos desenvolvendo para apresentar minhas habilidades e projetos em HTML e CSS. </p>
+    </div>
+
+    </li>
+
+
+    <li>
+        <img id="calculadora" src="calculadora.avif" alt="imagem calculadora">
+
+        <div class="cardcontent">
+        <h3><a href="">Projeto 2: Calculadora com Interface Gráfica</a></h3>
+        <p>Uma calculadora desenvolvida para praticar lógica e manipulação de eventos.</p>
+    </div>
+    </li>
+
+    <li >
+        <img src="analise de dados.avif" alt="imagem analise de dados">
+
+        <div class="cardcontent">
+        <h3><a href="#">projeto analise de dados </a></h3>
+        <p> Um projeto de estudo utilizando Python para analisar um conjunto de dados.</p> 
+    </div>
+    </li>
+</ul>
+    <h1> Arthur Santana</h1>
+    <button id ="theme-toggle"> </button>
+    <button id = "color-cycle-button"> Mudar Cor</button>
+<footer>
+    <p>
+        Desenvolvido por Arthur Santana |
+        <a href="https://www.linkedin.com/in/arthur-santana-dev/"target="_blank">LinkedIn</a> |
+        <a href="https://github.com/arthursantanaf-ctrl" target= "blank">github</a>
+    </p>
+
+</footer>
+<script src ="script.js"> </script>
+    
+    
+</body>
+</html>
+
+
+
+
+
