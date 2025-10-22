@@ -1,100 +1,89 @@
-    
-        body{
-            background-color: rgb(210, 223, 241);
-            color: #333333;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-        }
-        h1{
-            color: rgb(0, 0, 0);
-            text-align: center;
-            font-size: 60px;
-        }
-        p{
-            
-            color: rgb(0, 0, 0);
-            text-align: center;
-            font-size: 25px;
-        }
-
-        footer{
-            text-align: center;
-            margin-top: 60px;
-            font-size: 14px;
-            color: #555;       
-        
-        }
-        h2{
-            text-align: center;
-            margin-top: 60px;
-            font-size: 60px;
-        }
-        ul{
-            list-style-type: none;
-            padding: 0;
-            color: #333333;
-        }
-        li p{
-            text-align: left;
-        }
-        li{
-            
-            border: 1px solid #000000;
-            border-radius: 8px; 
-            margin-bottom: 20px;
-            background-color: #fff;
-            overflow: hidden;    
-            
-        }
-        h3{
-            margin-top: 0;
-            font-size: 40px;
-        }
-
-        a{
-            color: #833636;
-            text-decoration: none;
-        }
-        a:hover{
-            text-decoration: underline;
-        }
-        li img{
-           width: 100%;
-           aspect-ratio: 16 / 9;
-           object-fit: cover;  
-        }
-
-        .cardcontent{ 
-            padding: 24px;
-
-        }
-        #tit{
-            font-size: 40px;
-        }
-        #theme-toggle{
-            width: 50px;
-
-        }
-       body.dark-mode{
-        background-color: #121212;
-        color: #e0e0e0;
-       }
-       body.dark-mode li{
-        background-color: #1e1e1e;
-        border-color: #444;
-       }
-       body.dark-mode a{
-        color: #ffffff;
-       }
-        body.dark-mode h1,
-        body.dark-mode h2,
-        body.dark-mode h3,
-        body.dark-mode p {
-            color: #e0e0e0; /* O mesmo branco suave do body */
-
-
+body{
+    background-color: rgb(210, 223, 241);
+    color: #333333;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+}
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 60px;
+}
+p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 25px;
+}
+footer{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 14px;
+    color: #555;      
+}
+h2{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 60px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    color: #333333;
+}
+li p{
+    text-align: left;
+}
+li{
+    border: 1px solid #000000;
+    border-radius: 8px; 
+    margin-bottom: 20px;
+    background-color: #fff;
+    overflow: hidden;      
+}
+h3{
+    margin-top: 0;
+    font-size: 40px;
+}
+a{
+    color: #833636;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+li img{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;  
+}
+.cardcontent{ 
+    padding: 24px;
+}
+#tit{
+    font-size: 40px;
+}
+#theme-toggle{
+    width: 50px; /* Você pode querer ajustar isso ou o texto do botão */
 }
 
+/* --- Estilos do Modo Noturno --- */
+body.dark-mode{
+    background-color: #121212;
+    color: #e0e0e0;
+}
+body.dark-mode li{
+    background-color: #1e1e1e;
+    border-color: #444;
+}
+body.dark-mode a{
+    color: #ffffff;
+}
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p {
+    color: #e0e0e0; /* O mesmo branco suave do body */
+}
         
   
